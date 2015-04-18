@@ -5,3 +5,4 @@ gem 'slack-notifier'
 gem 'smarter_csv'
 
 gem 'capistrano', '~> 3.4.0'
+gem 'whenever', require: false
