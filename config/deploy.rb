@@ -10,6 +10,10 @@ set :repo_url, 'git@github.com:memerelics/marika.git'
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, '/home/hash/deploy/marika'
 
+set :rbenv_ruby, '2.1.2'
+
+set :whenever_roles, [:cron]
+
 # Default value for :scm is :git
 # set :scm, :git
 
