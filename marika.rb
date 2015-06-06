@@ -18,7 +18,7 @@ end
 s3 = Aws::S3::Client.new
 save_bills(s3, /aws-billing-csv/)
 
-filename = Dir.glob('*aws-billing-csv-*.csv').last
+filename = Dir.glob('*aws-billing-csv-*.csv').sort.last
 
 unless filename
   puts "no billing csv"
